@@ -26,9 +26,10 @@ public class Application {
 
         MemberDAO memberDAO = context.getBean("dao",MemberDAO.class);
 
+
         System.out.println(memberDAO.findMemberBySequence(1));
 
-        System.out.println(memberDAO.save(new MemberDTO(3,"user03","pass03","doritos")));
+        System.out.println(memberDAO.save(new MemberDTO(3,"user03","pass03","dorit                                                                                                                                                                          os")));
 
         System.out.println(memberDAO.findMemberBySequence(3));
 
