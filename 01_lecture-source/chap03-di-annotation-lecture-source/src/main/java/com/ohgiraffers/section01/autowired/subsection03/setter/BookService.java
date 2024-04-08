@@ -25,4 +25,12 @@ public class BookService {
         return  bookDAO.selectOne(sequence);
     }
 
+    //Autowired 의 경우
+    // MVS 간 연결에 유용하다
+    //다만 repository 같이 값을 집어 넣어야하는 인스턴스의 경우
+    // Autowired 를 쓰기 힘들다
+    //왜냐하면 Autowired는 의존성 부여를 하기만 하지
+    //값을 집어넣을수가 없기 때문이다
+     // 따라서 Autowired는 단순히 클래스간 연결을 위해 사용하는것이 바람직할것이다
+
 }
