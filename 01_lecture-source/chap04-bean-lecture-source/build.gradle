@@ -18,6 +18,10 @@ dependencies {
 //lombok dependancy
     implementation 'org.projectlombok:lombok:1.18.24'
     annotationProcessor 'org.projectlombok:lombok:1.18.24'
+// https://mvnrepository.com/artifact/jakarta.annotation/jakarta.annotation-api
+    implementation 'jakarta.annotation:jakarta.annotation-api:1.3.5'
+
+
 
 
 

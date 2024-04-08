@@ -8,6 +8,7 @@ import java.util.*;
 public class BookDAOImpl implements BookDAO{
 
     private final Map<Integer,BookDTO> bookList;
+
     public BookDAOImpl(){
         bookList=new HashMap<>();
         bookList.put(1,new BookDTO(1,123,"혼공자","아무개","한빛출판사",new Date()));

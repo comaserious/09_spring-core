@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id ="carpBread" class="com.ohgiraffers.common.Bread">
+        <constructor-arg index="0" value="붕어빵"/>
+        <constructor-arg index="1" value="1000"/>
+        <constructor-arg index="2">
+            <ref bean="today"/>
+        </constructor-arg>
+    </bean>
+    <bean id="today" class="java.util.Date" scope="prototype"/>
+
+    <bean id="milk" class="com.ohgiraffers.common.Beverage">
+        <constructor-arg index="0" value="초코우유"/>
+        <constructor-arg index="1" value="2000"/>
+        <constructor-arg index="2" value="500"/>
+    </bean>
+    <bean id="water" class="com.ohgiraffers.common.Beverage">
+        <constructor-arg index="0" value="에비앙"/>
+        <constructor-arg index="1" value="6500"/>
+        <constructor-arg index="2" value="100"/>
+
+    </bean>
+    <bean id="cart" class="com.ohgiraffers.common.ShoppingCart" scope="prototype"/>
+    <bean id="owner" class="com.ohgiraffers.section02.initdestroy.subsection03.xml.Owner" init-method="openShop" destroy-method="closeShop"/>
+</beans>
